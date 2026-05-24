@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import {
   LayoutGrid,
@@ -38,8 +39,14 @@ export default function Sidebar() {
         {/* Logo */}
         <div className="px-5 pt-5 pb-4">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-linear-to-br from-orange-400 to-red-500 flex items-center justify-center shadow-sm">
-              <span className="text-white font-bold text-sm">V</span>
+            <div className="w-8 h-8 rounded-lg overflow-hidden shadow-sm">
+              <Image
+                src="https://framerusercontent.com/images/lbpUIfvyh4wK5fzYeLgNIYSWSo.png"
+                alt="VedaAI Logo"
+                width={32}
+                height={32}
+                className="w-full h-full object-cover"
+              />
             </div>
             <span className="text-2xl font-bold text-gray-900">VedaAI</span>
           </div>
